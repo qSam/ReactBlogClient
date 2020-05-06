@@ -7,7 +7,7 @@ export default () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         
-        await axios.post('https://localhost:4000/posts',
+        await axios.post('http://localhost:4000/posts',
         {
             title
         });
@@ -17,7 +17,7 @@ export default () => {
     }
 
     return <div>
-        <form onSubmit = {onSubmit}>
+        <form onSubmit ={onSubmit}>
             <div className="form-group">
                 <label>Title</label>
                 <input 
