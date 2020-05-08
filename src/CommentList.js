@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
-export default (props.postId) => {
+export default (props) => {
     //Initialize state for data
     const [comments, setComments] = useState([]);
     //Fetch Data
